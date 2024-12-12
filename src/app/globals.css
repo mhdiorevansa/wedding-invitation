@@ -2,13 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: "Poppins";
-	src: url("/fonts/poppins.woff2") format("woff2");
-	font-weight: normal;
-	font-style: normal;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	color: #232b2b;
 }
 
-* {
-	font-family: "Poppins", sans-serif;
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #d3ad5c;
+	border-radius: 10px;
 }
