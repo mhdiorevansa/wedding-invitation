@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import useAos from "@/hooks/useAos";
 
 type CountDownTime = {
 	days: string;
@@ -68,11 +69,20 @@ const Countdown = () => {
 		};
 	}, [startCountDown]);
 
+	useAos({
+		duration: 1000,
+		easing: "ease-in-sine",
+		offset: 100,
+		once: true,
+	});
+
 	return (
-		<div className="grid md:max-w-3xl md:mx-auto px-10">
-			<div className="relative z-10 md:p-10 py-5 px-2 rounded-md bg-[rgba(255,255,255,0.05)] backdrop-blur-sm shadow-lg border border-slate-300">
+		<div className="grid md:max-w-3xl md:mx-auto px-5">
+			<div
+				data-aos="fade-up"
+				className="relative z-10 md:p-10 py-5 px-2 rounded-md bg-[rgba(255,255,255,0.05)] backdrop-blur-sm shadow-lg border border-slate-300">
 				<div className="mb-10 space-y-5 text-center">
-					<h1 className="md:text-4xl text-3xl font-semibold text-[#d3ad5c]">Upcoming Event</h1>
+					<h1 className="md:text-4xl text-3xl font-semibold text-[#e0bb7f]">Upcoming Event</h1>
 					<p>
 						Kami nantikan kehadiran para keluarga dan sahabat, untuk menjadi saksi ikrar janji suci
 						kami di hari yang bahagia.
@@ -80,7 +90,7 @@ const Countdown = () => {
 				</div>
 				<div className="flex justify-center md:gap-x-8 gap-x-6 px-4">
 					<div className="flex flex-col justify-center items-center gap-3">
-						<span className="p-3 flex justify-center items-center bg-[#d3ad5c] text-white md:text-2xl font-semibold rounded-md">
+						<span className="p-3 flex justify-center items-center bg-[#e0bb7f] text-white md:text-2xl font-semibold rounded-md">
 							{countDownTime?.days}
 						</span>
 						<span className="text-sm font-bold">
@@ -88,7 +98,7 @@ const Countdown = () => {
 						</span>
 					</div>
 					<div className="flex flex-col justify-center items-center gap-3">
-						<span className="p-3 bg-[#d3ad5c] text-white md:text-2xl font-semibold rounded-md">
+						<span className="p-3 bg-[#e0bb7f] text-white md:text-2xl font-semibold rounded-md">
 							{countDownTime?.hours}
 						</span>
 						<span className="text-sm font-bold">
@@ -96,7 +106,7 @@ const Countdown = () => {
 						</span>
 					</div>
 					<div className="flex flex-col justify-center items-center gap-3">
-						<span className="p-3 bg-[#d3ad5c] text-white md:text-2xl font-semibold rounded-md">
+						<span className="p-3 bg-[#e0bb7f] text-white md:text-2xl font-semibold rounded-md">
 							{countDownTime?.minutes}
 						</span>
 						<span className="text-sm font-bold">
@@ -104,7 +114,7 @@ const Countdown = () => {
 						</span>
 					</div>
 					<div className="flex flex-col justify-center items-center gap-3">
-						<span className="p-3 bg-[#d3ad5c] text-white md:text-2xl font-semibold rounded-md">
+						<span className="p-3 bg-[#e0bb7f] text-white md:text-2xl font-semibold rounded-md">
 							{countDownTime?.seconds}
 						</span>
 						<span className="text-sm font-bold">

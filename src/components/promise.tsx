@@ -4,19 +4,19 @@ import BackgroundImage from "./background-image";
 const Promise = () => {
 	return (
 		<section>
-			<div className="grid lg:grid-cols-3 lg:gap-x-0 relative z-10 h-[180vh] md:h-[80vh] lg:h-[79vh] xl:h-[84vh]">
-				<figure className="lg:col-span-1 w-[100%] relative flex items-center justify-center px-10 lg:px-0">
+			<div className="grid lg:grid-cols-3 relative z-10 h-[180vh] md:h-[80vh] lg:h-[79vh] xl:h-[85vh] lg:px-16 px-5 lg:space-x-10">
+				<figure className="lg:col-span-1 relative flex items-center">
 					<Image
-						className="lg:relative lg:-top-7 drop-shadow-[0_10px_10px_rgba(0,0,0,0.25)] w-full"
+						className="lg:relative lg:-top-7 drop-shadow-[0_10px_10px_rgba(0,0,0,0.25)]"
 						src={"/images/korean-people.png"}
 						alt="asset-img"
 						width={500}
 						height={500}
 					/>
 				</figure>
-				<div className="md:col-span-2 md:py-8 space-y-5 px-10">
+				<div className="md:col-span-2 md:py-8 space-y-5">
 					<div className="flex flex-col lg:items-start lg:justify-start mb-9 text-center space-y-5">
-						<h1 className="md:text-4xl text-3xl font-semibold text-[#d3ad5c]">Promise</h1>
+						<h1 className="md:text-4xl text-3xl font-bold text-[#e0bb7f]">Promise</h1>
 						<p className="w-full text-center lg:text-justify break-words hyphens-auto">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa perferendis adipisci
 							nobis praesentium iste ipsam sint dolore assumenda blanditiis id, ex quisquam saepe

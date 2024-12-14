@@ -48,7 +48,7 @@ const Cover = () => {
 						<div className="text-center text-white space-y-4">
 							<h3 className="text-xl text-white">Undangan Spesial Untuk Anda</h3>
 							<button
-								className="p-2 mx-auto rounded-lg space-x-2 bg-[#d3ad5c] flex items-center transition duration-200 ease-in-out hover:scale-105"
+								className="p-2 mx-auto rounded-lg space-x-2 bg-[#e0bb7f] flex items-center transition duration-200 ease-in-out hover:scale-105"
 								onClick={handleButtonClick}>
 								<CiMail className="text-xl" />
 								<span>Open Invitation</span>
