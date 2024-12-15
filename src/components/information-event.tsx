@@ -17,7 +17,7 @@ const InformationEvent = () => {
 		once: true,
 	});
 	return (
-		<div className="grid md:grid-cols-2 max-w-3xl md:mx-auto gap-7 px-5">
+		<div className="grid md:grid-cols-2 max-w-3xl md:mx-auto gap-7 px-5 overflow-hidden">
 			<div
 				data-aos="fade-left"
 				className="relative z-50 md:p-10 p-5 rounded-md bg-[rgba(255,255,255,0.05)] backdrop-blur-sm shadow-lg border border-slate-300 mx-auto w-full">

@@ -11,8 +11,8 @@ const OurStory = () => {
 		once: true,
 	});
 	return (
-		<section className="relative">
-			<div className="relative w-full md:px-32 px-5 py-14 md:py-24 z-10">
+		<section className="relative overflow-hidden">
+			<div className="w-full md:px-32 px-5 py-14 md:py-24 z-10">
 				<h1
 					data-aos="fade-up"
 					className="md:text-4xl text-3xl font-bold text-center md:mb-16 mb-10 text-[#e0bb7f]">

@@ -54,7 +54,6 @@ const Countdown = () => {
 
 	const startCountDown = useCallback(() => {
 		const countDownDate = new Date(2025, 3, 1, 0, 0, 0).getTime();
-
 		intervalRef.current = setInterval(() => {
 			getTimeDifference(countDownDate);
 		}, 1000);
@@ -77,7 +76,7 @@ const Countdown = () => {
 	});
 
 	return (
-		<div className="grid md:max-w-3xl md:mx-auto px-5">
+		<div className="grid md:max-w-3xl md:mx-auto px-5 overflow-hidden">
 			<div
 				data-aos="fade-up"
 				className="relative z-10 md:p-10 py-5 px-2 rounded-md bg-[rgba(255,255,255,0.05)] backdrop-blur-sm shadow-lg border border-slate-300">

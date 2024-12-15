@@ -14,8 +14,21 @@ const dancingScriptFont = Dancing_Script({
 const Cover = () => {
 	const [isAnimating, setIsAnimating] = useState<boolean>(false);
 	const [coverVisible, setCoverVisible] = useState<boolean>(true);
+	const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
 	const handleButtonClick = () => {
+		if (!audio) {
+			const newAudio = new Audio("/audio/music.mp3");
+			setAudio(newAudio);
+			newAudio.play().catch((error) => {
+				console.error("Audio playback failed:", error);
+			});
+		} else {
+			audio.currentTime = 0;
+			audio.play().catch((error) => {
+				console.error("Audio playback failed:", error);
+			});
+		}
 		setIsAnimating(true);
 		setTimeout(() => {
 			setCoverVisible(false);
@@ -32,7 +45,7 @@ const Cover = () => {
 			</div>
 			{coverVisible && (
 				<section
-					className={`fixed top-0 w-full h-full ${
+					className={`fixed top-0 w-full h-full overflow-hidden ${
 						isAnimating ? "animate__animated animate__fadeOutUp" : ""
 					}`}>
 					<div className="absolute inset-0 bg-[url('/images/cover-wedding.png')] bg-cover bg-no-repeat bg-center"></div>

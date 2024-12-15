@@ -4,6 +4,8 @@ import EventSchedule from "./event-schedule";
 import CTA from "./cta";
 import OurStory from "./our-story";
 import OurGallery from "./our-gallery";
+import WeddingGift from "./wedding-gift";
+import Footer from "./footer";
 
 const MainContent = () => {
 	return (
@@ -14,6 +16,8 @@ const MainContent = () => {
 			<CTA />
 			<OurStory />
 			<OurGallery />
+			<WeddingGift />
+			<Footer />
 		</main>
 	);
 };

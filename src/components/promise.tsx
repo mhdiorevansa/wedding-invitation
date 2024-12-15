@@ -4,10 +4,10 @@ import BackgroundImage from "./background-image";
 const Promise = () => {
 	return (
 		<section>
-			<div className="grid lg:grid-cols-3 relative z-10 h-[180vh] md:h-[80vh] lg:h-[79vh] xl:h-[85vh] lg:px-16 px-5 lg:space-x-10">
+			<div className="grid lg:grid-cols-3 relative z-10 h-[180vh] md:h-[80vh] lg:h-[79vh] xl:h-[83vh] lg:px-16 px-5 lg:space-x-10">
 				<figure className="lg:col-span-1 relative flex items-center">
 					<Image
-						className="lg:relative lg:-top-7 drop-shadow-[0_10px_10px_rgba(0,0,0,0.25)]"
+						className="lg:relative lg:-top-24 drop-shadow-[0_10px_10px_rgba(0,0,0,0.25)]"
 						src={"/images/korean-people.png"}
 						alt="asset-img"
 						width={500}
@@ -42,7 +42,7 @@ const Promise = () => {
 								className="h-52 object-cover object-top rounded-md "></Image>
 						</div>
 					</div>
-					<div className="text-center">
+					<div className="text-center pb-36">
 						<blockquote className="italic text-lg text-gray-600 space-y-3">
 							<p>
 								&ldquo;Love does not consist in gazing at each other, but in looking outward

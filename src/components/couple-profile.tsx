@@ -17,7 +17,7 @@ const CoupleProfile = () => {
 		once: true,
 	});
 	return (
-		<section className="relative">
+		<section className="relative overflow-hidden">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
 				<path
 					fill="#e0bb7f"
@@ -31,13 +31,13 @@ const CoupleProfile = () => {
 					Couple Profile
 				</h1>
 				<div data-aos="fade-left" className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-8">
-					<div className="md:col-span-1 lg:col-span-1 shadow-lg rounded-lg">
+					<div className="md:col-span-1 lg:col-span-1 shadow-md">
 						<Image
 							src={"/images/woman-with-wedding-dress.jpg"}
 							alt="asset-img"
 							width={500}
 							height={500}
-							className="object-cover object-top rounded-lg h-[27rem]"></Image>
+							className="object-cover object-top rounded-tl-full rounded-tr-full h-[27rem]"></Image>
 					</div>
 					<div className="lg:col-span-2 md:col-span-1 space-y-5 flex flex-col justify-center text-center md:text-left">
 						<h2
@@ -76,13 +76,13 @@ const CoupleProfile = () => {
 							</Link>
 						</div>
 					</div>
-					<div className="md:col-span-2 lg:col-span-1 shadow-lg rounded-lg">
+					<div className="md:col-span-2 lg:col-span-1 shadow-md">
 						<Image
 							src={"/images/men-with-wedding-dress.jpg"}
 							alt="asset-img"
 							width={500}
 							height={500}
-							className="object-cover object-top rounded-lg h-[27rem]"></Image>
+							className="object-cover object-top rounded-tl-full rounded-tr-full h-[27rem]"></Image>
 					</div>
 				</div>
 			</div>

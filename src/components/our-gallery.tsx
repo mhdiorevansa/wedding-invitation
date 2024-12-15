@@ -11,7 +11,7 @@ const OurGallery = () => {
 		once: true,
 	});
 	return (
-		<section className="relative">
+		<section className="relative z-50 md:bottom-28 w-full overflow-hidden">
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
 				<path
 					fill="#e0bb7f"
