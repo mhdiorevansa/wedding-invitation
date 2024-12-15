@@ -25,7 +25,9 @@ const CoupleProfile = () => {
 					d="M0,64L120,74.7C240,85,480,107,720,117.3C960,128,1200,128,1320,128L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
 			</svg>
 			<div className="bg-[#e0bb7f] relative w-full md:top-[-0.4rem] md:px-32 px-5 pt-14 pb-20 md:pb-9 z-10">
-				<h1 className="md:text-4xl text-3xl font-bold text-center md:mb-16 mb-10 text-white">
+				<h1
+					data-aos="fade-up"
+					className="md:text-4xl text-3xl font-bold text-center md:mb-16 mb-10 text-white">
 					Couple Profile
 				</h1>
 				<div data-aos="fade-left" className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-8">
